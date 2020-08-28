@@ -16,7 +16,7 @@ class LoginForm extends React.Component {
               <p className="belowWelcome">
                 We make easy for everyone to manage logistics operations.
               </p>
-          <form>
+          <form className="form">
 
             <div class="form-group">
               <label for="exampleInputEmail1" className="labelStyle">Email</label>

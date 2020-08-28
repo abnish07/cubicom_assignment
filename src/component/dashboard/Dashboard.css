@@ -1,0 +1,19 @@
+.leftMenu{
+    background: #f5f5f5 no-repeat padding-box;
+    opacity: 1;
+    height: 768px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #4b4b4b;
+    font-size: 14px;
+}
+
+.nav-link:active{
+    color: red;
+}
+
+.nav-link:hover{
+    color: black;
+}

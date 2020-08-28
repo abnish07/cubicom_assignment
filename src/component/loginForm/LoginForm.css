@@ -6,20 +6,22 @@
 
 .headerImage{
     background: url("https://public-v2links.adobecc.com/ff8e0f25-2209-43bd-57a2-d6496aeea16b/component?params=component_id%3A32070b4d-c8d3-4f94-b747-788e17453c40&params=version%3A0&token=1598695380_da39a3ee_290588fdbe3cd1351f36c3338a083f619a768b28&api_key=CometServer1");
-    max-width: 100%;
+    width: 80%;
     height: 768px;
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 1;
     top: 0px;
     left: 0px;
+    /* background-position: center; */
+    /* background-attachment: fixed; */
 }
 
 .canvas{
     top: 0px;
     height: 768px;
     width: 540px;
-    margin-left: 880px;
+    margin-left: 800px;
     box-shadow: 0px 0px 48px #2c2c2c;
     border-radius: 30px 0px 0px 30px;
     opacity: 1;
@@ -93,7 +95,7 @@
     opacity: 1;
 }
 
-form{
+.form{
     margin-top: 40px;
     padding-left: 120px;
     width: 341px;
