@@ -10,7 +10,10 @@ class LoginForm extends React.Component {
   render() {
     return (
       <>
-        <div className="headerImage ">
+        <div className="headerImage" 
+        style={{
+           backgroundImage: "url(" + "./images/component.png" + ")"
+          }}>
           <div className="canvas">
               <Welcome />
               <p className="belowWelcome">
@@ -55,7 +58,7 @@ class LoginForm extends React.Component {
             </div>  
           
           
-            <button type="submit" class="btn">
+            <button type="submit" class="loginBtn">
               Login
             </button>
           </form>
