@@ -5,13 +5,13 @@ function Welcome(){
 
     return(
         <>
-            <div >
-                <span className="welcome" >
+            <div className="welcome" >
+                <span >
                    Welcome to 
                 </span>
-                <span className="logo">
-                    <img src="/images/logo192.png" />
-                </span>
+                {/* <span className="logo"> */}
+                    <img src="/images/logo192.png" className="logo" />
+                {/* </span> */}
             </div>
         </>
     )

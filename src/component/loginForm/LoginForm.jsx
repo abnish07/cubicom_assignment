@@ -12,11 +12,11 @@ class LoginForm extends React.Component {
       <>
         <div className="headerImage ">
           <div className="canvas">
-          <form>
               <Welcome />
               <p className="belowWelcome">
                 We make easy for everyone to manage logistics operations.
               </p>
+          <form>
 
             <div class="form-group">
               <label for="exampleInputEmail1" className="labelStyle">Email</label>
@@ -47,14 +47,15 @@ class LoginForm extends React.Component {
                 id="exampleCheck1"
               />
               <label class="form-check-label labelStyle" for="exampleCheck1">
-                Remember me
-              </label>
-              <span className="float-right labelStyle">
+               Remember me
+              </label>   
+              <span className="forgot ">
                 Forgot Password?
-              </span>
-            </div>
+              </span> 
+            </div>  
           
-            <button type="submit" class="btn btn-primary">
+          
+            <button type="submit" class="btn">
               Login
             </button>
           </form>
