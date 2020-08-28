@@ -1,0 +1,83 @@
+.headerImage{
+    background: url("https://public-v2links.adobecc.com/ff8e0f25-2209-43bd-57a2-d6496aeea16b/component?params=component_id%3A32070b4d-c8d3-4f94-b747-788e17453c40&params=version%3A0&token=1598695380_da39a3ee_290588fdbe3cd1351f36c3338a083f619a768b28&api_key=CometServer1");
+    width: 100%;
+    height: 768px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+}
+
+.welcome{
+    padding-top: 205px;
+    padding-left: 200px;
+    width: 149px;
+    height: 34px;
+    text-align: left;
+    font: normal;
+    font-size: 28px;
+    font-family: "Proxima Nova";
+    letter-spacing: 0px;
+    color: #2c2c2c;
+    opacity: 1;
+}
+
+
+.logo{
+    padding-top: 310px;
+    padding-left: 10px;
+    width: 157px;
+    height: 24px;
+}
+
+
+
+.belowWelcome{
+   padding-top: 50px;
+    padding-left: 200px;
+    width: auto;
+    height: 35px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #b3b3b3;
+    opacity: 1;
+}
+
+.btn{
+    width: 140px;
+    height: 32px;
+    background: #00A29D 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+.labelStyle{
+    width: auto;
+    height: 15px;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #8e8e8e;
+    opacity: 1;
+}
+
+#exampleInputEmail1, #exampleInputPassword1{
+    text-align: left;
+    color: #8e8e8e;
+    font: italic normal;
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.canvas{
+    top: 0px;
+    height: 768px;
+    width: 566px;
+    margin-left: 800px;
+    box-shadow: 0px 0px 48px #2c2c2c;
+    border-radius: 30px 0px 0px 30px;
+    opacity: 1;
+    background: #fafafa no-repeat padding-box; 
+}
