@@ -33,7 +33,7 @@ class Navbar extends React.Component {
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://www.cubicom.net/"
+                href="https://cubicom.vercel.app/"
                 target="_blank"
               >
                 <img src="./images/logo.png" className="logoImage" />
