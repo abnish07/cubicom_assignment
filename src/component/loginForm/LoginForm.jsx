@@ -1,13 +1,29 @@
 import React from "react";
 import "./LoginForm.css";
 import Welcome from "./Welcome";
+import { connect } from "react-redux";
+import { userLogin } from '../redux/action';
 
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      email: '',
+      password: ''
+    };
   }
+
+  handleChange=(e)=>{
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+
   render() {
+    const { email, password } = this.state;
+    const { handleChange } = this;
+    const { userLogin } = this.props;
+    console.log(email, password)
     return (
       <>
         <div className="headerImage" 
@@ -28,6 +44,9 @@ class LoginForm extends React.Component {
                 class="form-control"
                 id="exampleInputEmail1"
                 placeholder="Enter email"
+                name="email"
+                value={email}
+                onChange={handleChange}
               />
             </div>
 
@@ -40,6 +59,9 @@ class LoginForm extends React.Component {
                 class="form-control"
                 id="exampleInputPassword1"
                 placeholder="Enter password"
+                name="password"
+                value={password}
+                onChange={handleChange}
               />
             </div>
 
@@ -58,7 +80,7 @@ class LoginForm extends React.Component {
             </div>  
           
           
-            <button type="submit" class="loginBtn">
+            <button type="submit" class="loginBtn" onClick={()=>userLogin(this.state)}>
               Login
             </button>
           </form>
@@ -69,4 +91,14 @@ class LoginForm extends React.Component {
   }
 }
 
-export default LoginForm;
+
+// const mapStateToProps = (state) => ({
+//   state: state.toggleData,
+// });
+
+const mapDispatchToProps = (dispatch) => ({
+  userLogin: (query) => dispatch(userLogin(query)),
+});
+
+
+export default connect(null, mapDispatchToProps)(LoginForm);

@@ -1,0 +1,4 @@
+export const TOGGLE_DATA = "TOGGLE_DATA";
+export const FETCH_LOGIN_REQUEST = "FETCH_LOGIN_REQUEST";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAILURE = "LOGIN_FAILURE";

@@ -1,11 +1,18 @@
 import React from 'react';
-import LoginForm from './component/loginForm/LoginForm';
+import Routes from './common/Routes';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './component/redux/store';
 
 
 function App() {
   return (
     <div className="App">
-        <LoginForm />
+      <BrowserRouter>
+      <Provider store={store}>
+      <Routes />
+      </Provider>
+      </BrowserRouter>
     </div>
   );
 }

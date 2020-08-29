@@ -1,0 +1,19 @@
+.profileImage{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #8c8c8c;
+}
+
+.logoImage{
+    width: 157px;
+    height: 24px;
+    left: 22px;
+    top: 23px;
+}
+
+.navbar{
+    height: 70px;
+    z-index: 5;
+}
+
