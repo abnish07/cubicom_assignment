@@ -21,12 +21,26 @@ export const loginFailure=(payload)=>({
 
 export const userLogin=(query)=>dispatch=>{
     dispatch(fetchLoginRequest())
-    return(
-        axios.post("https://api-stage.kyte.app/network-app/oauth/token?",{
-            email: query.email,
-            password: query.password
-        })
-        .then((res)=>{
+
+    return(    
+        axios
+      .post(
+        `https://api-stage.kyte.app/network-app/oauth/token?username=${query.email}&password=${query.password}&otp=&grant_type=password`,
+        {
+          
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        },
+        {
+          auth: {
+            username: 'cubicom',
+            password: 'password',
+          },
+        }
+      )
+
+    .then((res)=>{
             console.log("login Data", res)
             return dispatch(loginSuccess(res))
         })

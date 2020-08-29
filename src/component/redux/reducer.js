@@ -4,15 +4,17 @@ import { TOGGLE_DATA,FETCH_LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE } from '.
 const initState=({
     toggleData: true,
     isLoading: false,
+    isLogin: false,
     loginData: []
 })
 
 const reducer=(state = initState, { type, payload })=>{
-    console.log("payload", state.toggleData)
+    console.log("isLogin", state.isLogin)
     switch(type){
         case TOGGLE_DATA:
             return{
-                toggleData: !state.toggleData
+                toggleData: !state.toggleData,
+                isLogin: false,
             }
         case FETCH_LOGIN_REQUEST:
             return{
@@ -21,11 +23,13 @@ const reducer=(state = initState, { type, payload })=>{
         case LOGIN_SUCCESS:
             return{
                 isLoading: false,
+                isLogin: true,
                 loginData: payload
             }
         case LOGIN_FAILURE:
             return{
                 isLoading: false,
+                isLogin: false,
                 loginData: payload
             }
             default:
