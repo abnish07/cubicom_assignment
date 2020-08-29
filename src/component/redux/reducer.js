@@ -24,6 +24,7 @@ const reducer=(state = initState, { type, payload })=>{
             return{
                 isLoading: false,
                 isLogin: true,
+                toggleData: true,
                 loginData: payload
             }
         case LOGIN_FAILURE:
