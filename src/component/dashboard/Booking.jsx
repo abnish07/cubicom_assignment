@@ -2,6 +2,9 @@ import React from 'react'
 import './Dashboard.css';
 import BookingCard from './BookingCard';
 
+
+// Function for booking box in Dashboard. I am reusing the component here
+
 function Booking(){
 
     return(

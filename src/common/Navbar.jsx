@@ -20,6 +20,8 @@ class Navbar extends React.Component {
       <>
         <nav class="navbar navbar-expand-lg bg-white border">
           <ul class="navbar-nav mr-auto ">
+
+            {/* Toggle Navbar of left menu */}
             {!state ? (
               <li class="nav-item mt-2 mx-2" style={{ width: 20 }}>
                 <img
@@ -47,6 +49,8 @@ class Navbar extends React.Component {
               <option value="location3">Location3</option>
               <option value="location4">Location4</option>
             </select>
+
+            {/* profile picture image*/}
             <img
               src="https://static.thenounproject.com/png/212110-200.png"
               class="profileImage"

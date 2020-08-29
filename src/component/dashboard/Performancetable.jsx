@@ -12,7 +12,6 @@ class PerformanceTable extends React.Component {
       pageNumbers: [],
       totalData: 30,
       data: data,
-      demo: "",
     };
   }
 
@@ -54,6 +53,7 @@ class PerformanceTable extends React.Component {
       this.handleChange();
       return "Loading...";
     }
+    // PagInation calculation. finding the first Index and last Index 
     const indexOfLastItem = currentPage * itemPerPage;
     const indexOfFirstItem = indexOfLastItem - itemPerPage;
     const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
@@ -72,6 +72,7 @@ class PerformanceTable extends React.Component {
             </tr>
           </thead>
           <tbody>
+            {/* Table record with pagination */}
             {currentItems.map((item) => (
               <tr className="recordStyle" key={item.feName}>
                 <td>{item.feName}</td>
@@ -79,6 +80,8 @@ class PerformanceTable extends React.Component {
                 <td>{item.unDel}</td>
                 <td>{item.nA}</td>
                 <td>
+
+                  {/* Progress Bar */}
                   <div className="progress">
                     <div
                       class="progress-bar bg-success"
@@ -97,6 +100,9 @@ class PerformanceTable extends React.Component {
             ))}
           </tbody>
         </table>
+
+        {/* PagInation page Number */}
+
         <div className="d-flex mt-32 float-right pr-5">
           <small className="align-self-center">
             <img src="./images/icon_left.png" />

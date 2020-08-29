@@ -25,6 +25,9 @@ class LoginForm extends React.Component {
     const { handleChange } = this;
     const { userLogin, loginData } = this.props;
     console.log("loginData line no 26", loginData && loginData.status);
+
+    // Login Check, If login true, Redirect to dashboard.
+    
     if (loginData && loginData.status === 200) {
       return <Redirect to="/dashboard" />;
     }

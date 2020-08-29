@@ -23,6 +23,7 @@ class LeftMenu extends React.Component {
               <img src="./images/dashboard.png" className="mr-2" />
               Dashboard
             </a>
+
             <a class="nav-link leftNav dropdown">
               <img src="./images/operation.png" className="mr-2" />
               Operations
@@ -56,8 +57,9 @@ class LeftMenu extends React.Component {
               Configurations
             </a>
           </div>
-          <div
-            className="toggleMenu"
+
+          {/* Toggle left Navbar  */}
+          <div className="toggleMenu"
             onClick={() => toggleMenuData(this.state.toggleState)}
           >
             <img src="./images/doublearrow.svg" className="backIcon" />

@@ -1,5 +1,10 @@
 import reducer from './reducer';
-import { createStore, applyMiddleware, compose, composer } from 'redux';
+import {
+    createStore,
+    applyMiddleware,
+    compose,
+    composer
+} from 'redux';
 import thunk from 'redux-thunk';
 
 

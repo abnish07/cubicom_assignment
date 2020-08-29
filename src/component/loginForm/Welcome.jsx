@@ -9,9 +9,7 @@ function Welcome(){
                 <span >
                    Welcome to 
                 </span>
-                {/* <span className="logo"> */}
                     <img src="/images/logo192.png" className="logo" />
-                {/* </span> */}
             </div>
         </>
     )
