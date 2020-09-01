@@ -52,7 +52,7 @@ export const userLogin = (query) => dispatch => {
       return dispatch(loginSuccess(res))
     })
     .catch((error) => {
-      console.log(error)
+     alert("invalid credentials")
     })
   )
 }
